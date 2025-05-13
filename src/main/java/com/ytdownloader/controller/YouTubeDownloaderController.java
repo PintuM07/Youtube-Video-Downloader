@@ -23,7 +23,7 @@ public class YouTubeDownloaderController {
         return ResponseEntity.ok(youTubeDownloaderService.getDownloadLinks(request.getUrl()));
     }
 
-    @GetMapping("/history")
+    @GetMapping("/yhistory")
     public ResponseEntity<List<DownloadLink>> getDownloadHistory() {
         return ResponseEntity.ok(youTubeDownloaderService.getDownloadHistory());
     }
